@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be6f8309-ddee-474f-88e8-f9a06d0237db" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="be6f8309-ddee-474f-88e8-f9a06d0237db" name="Changes" comment="Completed Testing for Login nad HomePage">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,12 +22,24 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Parth-Chikalkar&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Parth-Chikalkar/Selenium-Testing&quot;,
+    &quot;accountId&quot;: &quot;f1cc901c-a7fc-4f4c-9823-cb69199cb529&quot;
+  }
+}</component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="38mQJ5byVxMu8qEixqC2UIp67bs" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -45,13 +52,24 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.HomePageTest.Logout.executor": "Run",
     "TestNG.HomePageTest.executor": "Run",
+    "TestNG.HomePageTest.multipleItemsAddedCheck.executor": "Run",
+    "TestNG.HomePageTest.verifyNoOfItemsAddedInCartBadge.executor": "Run",
+    "TestNG.HomePageTest.verifyNoOfItemsAddedandIntheSpan.executor": "Run",
+    "TestNG.ItesmDetailPage.AddedtoCartAAndRemoved.executor": "Run",
+    "TestNG.ItesmDetailPage.MultipleItemsInCart.executor": "Run",
+    "TestNG.ItesmDetailPage.addToCart.executor": "Run",
+    "TestNG.ItesmDetailPage.executor": "Run",
+    "TestNG.ItesmDetailPage.pageOpeningTest.executor": "Run",
+    "TestNG.ItesmDetailPage.verifyDetails.executor": "Run",
     "TestNG.LoginTest.executor": "Run",
+    "TestNG.LoginTest.missingPassword.executor": "Run",
+    "TestNG.LoginTest.notUsername.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="HomePageTest.Logout" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.ItesmDetailPage">
+    <configuration name="ItesmDetailPage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Demo_Blaze_Testing" />
       <extension name="coverage">
         <pattern>
@@ -60,8 +78,79 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.HomePageTest" />
-      <option name="METHOD_NAME" value="Logout" />
+      <option name="MAIN_CLASS_NAME" value="Tests.ItesmDetailPage" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ItesmDetailPage.AddedtoCartAAndRemoved" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Demo_Blaze_Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.ItesmDetailPage" />
+      <option name="METHOD_NAME" value="AddedtoCartAAndRemoved" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ItesmDetailPage.MultipleItemsInCart" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Demo_Blaze_Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.ItesmDetailPage" />
+      <option name="METHOD_NAME" value="MultipleItemsInCart" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ItesmDetailPage.addToCart" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Demo_Blaze_Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.ItesmDetailPage" />
+      <option name="METHOD_NAME" value="addToCart" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ItesmDetailPage.verifyDetails" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Demo_Blaze_Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.ItesmDetailPage" />
+      <option name="METHOD_NAME" value="verifyDetails" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -71,7 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.HomePageTest.Logout" />
+        <item itemvalue="TestNG.ItesmDetailPage" />
+        <item itemvalue="TestNG.ItesmDetailPage.AddedtoCartAAndRemoved" />
+        <item itemvalue="TestNG.ItesmDetailPage.MultipleItemsInCart" />
+        <item itemvalue="TestNG.ItesmDetailPage.addToCart" />
+        <item itemvalue="TestNG.ItesmDetailPage.verifyDetails" />
       </list>
     </recent_temporary>
   </component>
@@ -84,6 +177,44 @@
       <option name="presentableId" value="Default" />
       <updated>1769402194268</updated>
     </task>
+    <task id="LOCAL-00001" summary="Completed Testing for Login nad HomePage">
+      <option name="closed" value="true" />
+      <created>1769468086150</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1769468086150</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Completed Testing for Login nad HomePage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed Testing for Login nad HomePage" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Pages/HomePage.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Tests/HomePageTest.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/Tests/ItesmDetailPage.java</url>
+          <line>57</line>
+          <properties class="Tests.ItesmDetailPage" method="AddedtoCartAAndRemoved">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
