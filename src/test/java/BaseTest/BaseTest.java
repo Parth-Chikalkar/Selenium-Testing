@@ -7,8 +7,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.*;
 
-import java.util.HashMap;
-import java.util.Map;
 
 public class BaseTest {
     protected WebDriver driver;
@@ -18,7 +16,7 @@ public class BaseTest {
 
     @BeforeClass
     public void reportSetup(){
-      extent = new ExtentReports("C:/Users/parth/Desktop/Demo_Blaze_Testing/Test_Outputs/Test_Report_03.html");
+      extent = new ExtentReports("C:/Users/parth/Desktop/Demo_Blaze_Testing/Test_Outputs/Test_Report_04.html");
 
     }
     @BeforeMethod
