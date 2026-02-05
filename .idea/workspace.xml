@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be6f8309-ddee-474f-88e8-f9a06d0237db" name="Changes" comment="Completed Testing for Item Detail Page and added functionality in base test to resolve some chrome security related problems , also added some tests in home page">
+    <list default="true" id="be6f8309-ddee-474f-88e8-f9a06d0237db" name="Changes" comment="Completed testing for Cart Page Functionalities">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test_Outputs/Test_Report.html" beforeDir="false" afterPath="$PROJECT_DIR$/Test_Outputs/Test_Report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test_Outputs/Test_Report_03.html" beforeDir="false" afterPath="$PROJECT_DIR$/Test_Outputs/Test_Report_03.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/ItemDetailPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/ItemDetailPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,11 +55,24 @@
     "TestNG.CartPageTest.addMultipleItems.executor": "Run",
     "TestNG.CartPageTest.checkTheBadgeNoAndNoOfItemInCart.executor": "Run",
     "TestNG.CartPageTest.continueShopping.executor": "Run",
+    "TestNG.CartPageTest.executor": "Run",
     "TestNG.CartPageTest.removeItemFromCart.executor": "Run",
     "TestNG.CartPageTest.removeMultipleItems.executor": "Run",
     "TestNG.CartPageTest.verifyCartIsOpen.executor": "Run",
     "TestNG.CartPageTest.verifyItemDetails.executor": "Run",
     "TestNG.CartPageTest.verifyItemsINcart.executor": "Run",
+    "TestNG.Check_out_step1Test.SendingEverything.executor": "Run",
+    "TestNG.Check_out_step1Test.checkWhetherThePageLoads.executor": "Run",
+    "TestNG.Check_out_step1Test.executor": "Run",
+    "TestNG.Check_out_step1Test.sendFirstandLastName.executor": "Run",
+    "TestNG.Check_out_step1Test.sendOnlyFirstName.executor": "Run",
+    "TestNG.Check_out_step2Test.CheckForEmptyCheckout.executor": "Run",
+    "TestNG.Check_out_step2Test.CheckForMultipleItems.executor": "Run",
+    "TestNG.Check_out_step2Test.CheckWhetherThePageLoad.executor": "Run",
+    "TestNG.Check_out_step2Test.CheckforOneItemAdded.executor": "Run",
+    "TestNG.Check_out_step2Test.executor": "Run",
+    "TestNG.Check_out_step2Test.finishCheckout.executor": "Run",
+    "TestNG.Check_out_step2Test.returnHome.executor": "Run",
     "TestNG.HomePageTest.Logout.executor": "Run",
     "TestNG.HomePageTest.executor": "Run",
     "TestNG.HomePageTest.multipleItemsAddedCheck.executor": "Run",
@@ -82,8 +92,8 @@
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.CartPageTest">
-    <configuration name="CartPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.Check_out_step2Test">
+    <configuration name="Check_out_step2Test" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Demo_Blaze_Testing" />
       <extension name="coverage">
         <pattern>
@@ -92,7 +102,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.CartPageTest" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Check_out_step2Test" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -100,7 +110,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CartPageTest.addMultipleItems" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Check_out_step2Test.CheckForMultipleItems" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Demo_Blaze_Testing" />
       <extension name="coverage">
         <pattern>
@@ -109,8 +119,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.CartPageTest" />
-      <option name="METHOD_NAME" value="addMultipleItems" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Check_out_step2Test" />
+      <option name="METHOD_NAME" value="CheckForMultipleItems" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -118,7 +128,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CartPageTest.continueShopping" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Check_out_step2Test.CheckforOneItemAdded" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Demo_Blaze_Testing" />
       <extension name="coverage">
         <pattern>
@@ -127,8 +137,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.CartPageTest" />
-      <option name="METHOD_NAME" value="continueShopping" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Check_out_step2Test" />
+      <option name="METHOD_NAME" value="CheckforOneItemAdded" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -136,7 +146,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CartPageTest.removeMultipleItems" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Check_out_step2Test.finishCheckout" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Demo_Blaze_Testing" />
       <extension name="coverage">
         <pattern>
@@ -145,8 +155,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.CartPageTest" />
-      <option name="METHOD_NAME" value="removeMultipleItems" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Check_out_step2Test" />
+      <option name="METHOD_NAME" value="finishCheckout" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -154,7 +164,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CartPageTest.verifyItemDetails" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Check_out_step2Test.returnHome" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Demo_Blaze_Testing" />
       <extension name="coverage">
         <pattern>
@@ -163,8 +173,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.CartPageTest" />
-      <option name="METHOD_NAME" value="verifyItemDetails" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Check_out_step2Test" />
+      <option name="METHOD_NAME" value="returnHome" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -174,11 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.CartPageTest" />
-        <item itemvalue="TestNG.CartPageTest.verifyItemDetails" />
-        <item itemvalue="TestNG.CartPageTest.continueShopping" />
-        <item itemvalue="TestNG.CartPageTest.removeMultipleItems" />
-        <item itemvalue="TestNG.CartPageTest.addMultipleItems" />
+        <item itemvalue="TestNG.Check_out_step2Test" />
+        <item itemvalue="TestNG.Check_out_step2Test.returnHome" />
+        <item itemvalue="TestNG.Check_out_step2Test.finishCheckout" />
+        <item itemvalue="TestNG.Check_out_step2Test.CheckForMultipleItems" />
+        <item itemvalue="TestNG.Check_out_step2Test.CheckforOneItemAdded" />
       </list>
     </recent_temporary>
   </component>
@@ -207,13 +217,22 @@
       <option name="project" value="LOCAL" />
       <updated>1769631866804</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Completed testing for Cart Page Functionalities">
+      <option name="closed" value="true" />
+      <created>1770239311657</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1770239311657</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Completed Testing for Login nad HomePage" />
     <MESSAGE value="Completed Testing for Item Detail Page and added functionality in base test to resolve some chrome security related problems , also added some tests in home page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed Testing for Item Detail Page and added functionality in base test to resolve some chrome security related problems , also added some tests in home page" />
+    <MESSAGE value="Completed testing for Cart Page Functionalities" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed testing for Cart Page Functionalities" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
