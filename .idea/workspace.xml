@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be6f8309-ddee-474f-88e8-f9a06d0237db" name="Changes" comment="Completed testing for Cart Page Functionalities">
+    <list default="true" id="be6f8309-ddee-474f-88e8-f9a06d0237db" name="Changes" comment="Completed testing for Cart Page Functionalities and Completed Testing for Checkout Pages and genereted reports for them">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Outputs/Test_Report_02.html" beforeDir="false" afterPath="$PROJECT_DIR$/Test_Outputs/Test_Report_02.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/HomePageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +79,10 @@
     "TestNG.HomePageTest.Logout.executor": "Run",
     "TestNG.HomePageTest.executor": "Run",
     "TestNG.HomePageTest.multipleItemsAddedCheck.executor": "Run",
+    "TestNG.HomePageTest.selectOptionSortAtoZ.executor": "Run",
+    "TestNG.HomePageTest.selectOptionZtoA.executor": "Run",
+    "TestNG.HomePageTest.selectoptionSortPriceFromHtoL.executor": "Run",
+    "TestNG.HomePageTest.selelectOptionSortLtoH.executor": "Run",
     "TestNG.HomePageTest.verifyNoOfItemsAddedInCartBadge.executor": "Run",
     "TestNG.HomePageTest.verifyNoOfItemsAddedandIntheSpan.executor": "Run",
     "TestNG.ItesmDetailPage.AddedtoCartAAndRemoved.executor": "Run",
@@ -92,8 +99,8 @@
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.Check_out_step2Test">
-    <configuration name="Check_out_step2Test" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.HomePageTest">
+    <configuration name="HomePageTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Demo_Blaze_Testing" />
       <extension name="coverage">
         <pattern>
@@ -102,7 +109,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Check_out_step2Test" />
+      <option name="MAIN_CLASS_NAME" value="Tests.HomePageTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -110,7 +117,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Check_out_step2Test.CheckForMultipleItems" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="HomePageTest.selectOptionSortAtoZ" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Demo_Blaze_Testing" />
       <extension name="coverage">
         <pattern>
@@ -119,8 +126,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Check_out_step2Test" />
-      <option name="METHOD_NAME" value="CheckForMultipleItems" />
+      <option name="MAIN_CLASS_NAME" value="Tests.HomePageTest" />
+      <option name="METHOD_NAME" value="selectOptionSortAtoZ" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -128,7 +135,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Check_out_step2Test.CheckforOneItemAdded" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="HomePageTest.selectOptionZtoA" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Demo_Blaze_Testing" />
       <extension name="coverage">
         <pattern>
@@ -137,8 +144,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Check_out_step2Test" />
-      <option name="METHOD_NAME" value="CheckforOneItemAdded" />
+      <option name="MAIN_CLASS_NAME" value="Tests.HomePageTest" />
+      <option name="METHOD_NAME" value="selectOptionZtoA" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -146,7 +153,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Check_out_step2Test.finishCheckout" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="HomePageTest.selectoptionSortPriceFromHtoL" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Demo_Blaze_Testing" />
       <extension name="coverage">
         <pattern>
@@ -155,8 +162,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Check_out_step2Test" />
-      <option name="METHOD_NAME" value="finishCheckout" />
+      <option name="MAIN_CLASS_NAME" value="Tests.HomePageTest" />
+      <option name="METHOD_NAME" value="selectoptionSortPriceFromHtoL" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -164,7 +171,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Check_out_step2Test.returnHome" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="HomePageTest.selelectOptionSortLtoH" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Demo_Blaze_Testing" />
       <extension name="coverage">
         <pattern>
@@ -173,8 +180,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Check_out_step2Test" />
-      <option name="METHOD_NAME" value="returnHome" />
+      <option name="MAIN_CLASS_NAME" value="Tests.HomePageTest" />
+      <option name="METHOD_NAME" value="selelectOptionSortLtoH" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -184,11 +191,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Check_out_step2Test" />
-        <item itemvalue="TestNG.Check_out_step2Test.returnHome" />
-        <item itemvalue="TestNG.Check_out_step2Test.finishCheckout" />
-        <item itemvalue="TestNG.Check_out_step2Test.CheckForMultipleItems" />
-        <item itemvalue="TestNG.Check_out_step2Test.CheckforOneItemAdded" />
+        <item itemvalue="TestNG.HomePageTest" />
+        <item itemvalue="TestNG.HomePageTest.selectOptionZtoA" />
+        <item itemvalue="TestNG.HomePageTest.selectOptionSortAtoZ" />
+        <item itemvalue="TestNG.HomePageTest.selelectOptionSortLtoH" />
+        <item itemvalue="TestNG.HomePageTest.selectoptionSortPriceFromHtoL" />
       </list>
     </recent_temporary>
   </component>
@@ -225,21 +232,30 @@
       <option name="project" value="LOCAL" />
       <updated>1770239311657</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Completed testing for Cart Page Functionalities and Completed Testing for Checkout Pages and genereted reports for them">
+      <option name="closed" value="true" />
+      <created>1770326549755</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1770326549755</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Completed Testing for Login nad HomePage" />
     <MESSAGE value="Completed Testing for Item Detail Page and added functionality in base test to resolve some chrome security related problems , also added some tests in home page" />
     <MESSAGE value="Completed testing for Cart Page Functionalities" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed testing for Cart Page Functionalities" />
+    <MESSAGE value="Completed testing for Cart Page Functionalities and Completed Testing for Checkout Pages and genereted reports for them" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed testing for Cart Page Functionalities and Completed Testing for Checkout Pages and genereted reports for them" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Pages/HomePage.java</url>
-          <line>11</line>
+          <line>14</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

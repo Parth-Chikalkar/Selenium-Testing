@@ -160,8 +160,87 @@ public class HomePageTest extends BaseTest {
         Assert.assertEquals(cartItems,2,"Not Matched");
         test.log(cartItems==3 ? LogStatus.PASS :LogStatus.FAIL , cartItems ==3 ? "Test Passed " : "Test Failed ");
 
+    }
 
+    @Test
+    public void selectoptionSortPriceFromHtoL(){
+        test = extent.startTest("Select Option Checking !");
+        test.log(LogStatus.INFO,"Test Started");
+        LoginPage loginPage = new LoginPage(driver);
+        test.log(LogStatus.INFO, "Entering credentials");
+        loginPage.Login("standard_user", "secret_sauce");
+        test.log(LogStatus.INFO, "Login successful");
 
+        HomePage page = new HomePage(driver);
+        test.log(LogStatus.INFO,"Clicked Select Option");
+
+        page.priceHighToLow();
+        test.log(LogStatus.INFO,"Wait...");
+        page.waitForPricesToUpdate();
+        test.log(LogStatus.PASS,"Passed Sucessfully ");
+        Assert.assertTrue(page.isPriceSortedHighToLow());
 
     }
+
+    @Test
+    public void selelectOptionSortLtoH (){
+        test = extent.startTest("Select Option Checking !");
+        test.log(LogStatus.INFO,"Test Started");
+        LoginPage loginPage = new LoginPage(driver);
+        test.log(LogStatus.INFO, "Entering credentials");
+        loginPage.Login("standard_user", "secret_sauce");
+        test.log(LogStatus.INFO, "Login successful");
+
+        HomePage page = new HomePage(driver);
+        test.log(LogStatus.INFO,"Clicked Select Option");
+
+        page.priceLowtoHigh();
+        test.log(LogStatus.INFO,"Wait...");
+        page.waitForPricesToUpdate();
+
+        Assert.assertTrue(page.isPriceSortedLowToHigh());
+        test.log(LogStatus.PASS,"Passed Sucessfully ");
+    }
+
+    @Test
+    public void selectOptionSortAtoZ (){
+        test = extent.startTest("Select Option Checking !");
+        test.log(LogStatus.INFO,"Test Started");
+        LoginPage loginPage = new LoginPage(driver);
+        test.log(LogStatus.INFO, "Entering credentials");
+        loginPage.Login("standard_user", "secret_sauce");
+        test.log(LogStatus.INFO, "Login successful");
+
+        HomePage page = new HomePage(driver);
+        test.log(LogStatus.INFO,"Clicked Select Option");
+
+        page.nameAtoZ();
+        test.log(LogStatus.INFO,"Wait...");
+        page.waitForPricesToUpdate();
+
+        Assert.assertTrue(page.isNamesSortedAtoZ());
+        test.log(LogStatus.PASS,"Passed Sucessfully ");
+    }
+    @Test
+    public void selectOptionZtoA (){
+        test = extent.startTest("Select Option Checking !");
+        test.log(LogStatus.INFO,"Test Started");
+        LoginPage loginPage = new LoginPage(driver);
+        test.log(LogStatus.INFO, "Entering credentials");
+        loginPage.Login("standard_user", "secret_sauce");
+        test.log(LogStatus.INFO, "Login successful");
+
+        HomePage page = new HomePage(driver);
+        test.log(LogStatus.INFO,"Clicked Select Option");
+
+        page.nameZtoA();
+        test.log(LogStatus.INFO,"Wait...");
+        page.waitForPricesToUpdate();
+
+        Assert.assertTrue(page.isNamesSortedZtoA());
+        test.log(LogStatus.PASS,"Passed Sucessfully ");
+    }
+
+
+
 }

@@ -4,9 +4,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import javax.naming.Name;
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.List;
 
 public class HomePage {
@@ -21,6 +24,12 @@ public class HomePage {
     private By addToCart = By.id("add-to-cart-sauce-labs-backpack");
     private By navList = By.xpath("//nav[@class='bm-item-list']");
     private By noOfItems = By.className("shopping_cart_badge");
+    private By selection = By.className("product_sort_container");
+    private List <WebElement> pricesList ;
+    private By prices = By.xpath("//div[@class='inventory_item_price']");
+    private Select select ;
+    private List<WebElement> slisttt ;
+    private By nam = By.xpath("//div[@class='inventory_item_name ']");
     public HomePage (WebDriver driver){
         this.driver = driver;
     }
@@ -86,6 +95,108 @@ public class HomePage {
             buttons.get(0).click();
         }
     }
+  // All bout Select in the homerpage
+    public void clickSelect(){
+       select = new Select(driver.findElement(selection));
+    }
+
+    public void priceHighToLow (){
+        clickSelect();
+        select.selectByIndex(3);
+    }
+    public void priceLowtoHigh (){
+        clickSelect();
+        select.selectByIndex(2);
+    }
+    public void nameAtoZ (){
+        clickSelect();
+        select.selectByIndex(0);
+    }
+    public void nameZtoA (){
+        clickSelect();
+        select.selectByIndex(1);
+    }
+
+    public List<Double> setListAndGetPrice (){
+        pricesList = driver.findElements(prices);
+        List<Double> plist = new ArrayList<>();
+        for (int i = 0; i < pricesList.size(); i++) {
+            plist.add(Double.parseDouble(pricesList.get(i).getText().replace("$","")));
+        }
+        return plist;
+    }
+    public List<String> setListAndSetString(){
+        slisttt = driver.findElements(nam);
+        List<String> l = new ArrayList<>();
+        for (int i = 0; i < slisttt.size(); i++) {
+            l.add(slisttt.get(0).getText());
+        }
+        return l;
+    }
+
+
+    public boolean isNamesSortedAtoZ() {
+        List<String> list = setListAndSetString();
+
+        if (list == null || list.size() < 2) return true;
+
+        for (int i = 1; i < list.size(); i++) {
+            if (list.get(i).compareToIgnoreCase(list.get(i - 1)) < 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+    public boolean isNamesSortedZtoA() {
+        List<String> list = setListAndSetString();
+
+        if (list == null || list.size() < 2) return true;
+
+        for (int i = 1; i < list.size(); i++) {
+            if (list.get(i).compareToIgnoreCase(list.get(i - 1)) > 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+
+
+    public boolean isPriceSortedHighToLow() {
+        List<Double> list = setListAndGetPrice();
+        if (list == null || list.size() < 2) return true;
+        for (int i = 1; i < list.size(); i++) {
+            if (list.get(i) > list.get(i - 1)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public boolean isPriceSortedLowToHigh() {
+        List<Double> list =setListAndGetPrice();
+        if (list == null || list.size() < 2) return true;
+        for (int i = 1; i < list.size(); i++) {
+            if (list.get(i) < list.get(i - 1)) {
+                return false;
+            }
+        }
+        return true;
+    }
+    public void waitForPricesToUpdate() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(prices));
+    }
+
+
+
+
+
+
+
+
+
+
 
 
 
