@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be6f8309-ddee-474f-88e8-f9a06d0237db" name="Changes" comment="Completed testing for Cart Page Functionalities and Completed Testing for Checkout Pages and genereted reports for them">
+    <list default="true" id="be6f8309-ddee-474f-88e8-f9a06d0237db" name="Changes" comment="Tested Select tag for homepage and completed the final test for homepage and generared the new report for it">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test_Outputs/Test_Report_02.html" beforeDir="false" afterPath="$PROJECT_DIR$/Test_Outputs/Test_Report_02.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/HomePageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +23,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -95,11 +94,13 @@
     "TestNG.LoginTest.missingPassword.executor": "Run",
     "TestNG.LoginTest.notUsername.executor": "Run",
     "TestNG.LoginTest.validLoginTest.executor": "Run",
+    "TestNG.Login_Data_Driven_Test.checkUsersFromFile.executor": "Run",
+    "TestNG.Login_Data_Driven_Test.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.HomePageTest">
+  <component name="RunManager" selected="TestNG.Login_Data_Driven_Test">
     <configuration name="HomePageTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Demo_Blaze_Testing" />
       <extension name="coverage">
@@ -153,35 +154,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomePageTest.selectoptionSortPriceFromHtoL" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Login_Data_Driven_Test" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Demo_Blaze_Testing" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tests.*" />
+          <option name="PATTERN" value="Data_Driven.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.HomePageTest" />
-      <option name="METHOD_NAME" value="selectoptionSortPriceFromHtoL" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PACKAGE_NAME" value="Data_Driven" />
+      <option name="MAIN_CLASS_NAME" value="Data_Driven.Login_Data_Driven_Test" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomePageTest.selelectOptionSortLtoH" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Login_Data_Driven_Test.checkUsersFromFile" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Demo_Blaze_Testing" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tests.*" />
+          <option name="PATTERN" value="Data_Driven.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.HomePageTest" />
-      <option name="METHOD_NAME" value="selelectOptionSortLtoH" />
+      <option name="PACKAGE_NAME" value="Data_Driven" />
+      <option name="MAIN_CLASS_NAME" value="Data_Driven.Login_Data_Driven_Test" />
+      <option name="METHOD_NAME" value="checkUsersFromFile" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -191,11 +191,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Login_Data_Driven_Test" />
+        <item itemvalue="TestNG.Login_Data_Driven_Test.checkUsersFromFile" />
         <item itemvalue="TestNG.HomePageTest" />
         <item itemvalue="TestNG.HomePageTest.selectOptionZtoA" />
         <item itemvalue="TestNG.HomePageTest.selectOptionSortAtoZ" />
-        <item itemvalue="TestNG.HomePageTest.selelectOptionSortLtoH" />
-        <item itemvalue="TestNG.HomePageTest.selectoptionSortPriceFromHtoL" />
       </list>
     </recent_temporary>
   </component>
@@ -240,15 +240,35 @@
       <option name="project" value="LOCAL" />
       <updated>1770326549755</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Tested Select tag for homepage and completed the final test for homepage and generared the new report for it">
+      <option name="closed" value="true" />
+      <created>1770467060182</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1770467060182</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Completed Testing for Login nad HomePage" />
     <MESSAGE value="Completed Testing for Item Detail Page and added functionality in base test to resolve some chrome security related problems , also added some tests in home page" />
     <MESSAGE value="Completed testing for Cart Page Functionalities" />
     <MESSAGE value="Completed testing for Cart Page Functionalities and Completed Testing for Checkout Pages and genereted reports for them" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed testing for Cart Page Functionalities and Completed Testing for Checkout Pages and genereted reports for them" />
+    <MESSAGE value="Tested Select tag for homepage and completed the final test for homepage and generared the new report for it" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tested Select tag for homepage and completed the final test for homepage and generared the new report for it" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -262,6 +282,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/Tests/HomePageTest.java</url>
           <line>15</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Data_Driven/Login_Data_Driven_Test.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/Tests/ItesmDetailPage.java</url>

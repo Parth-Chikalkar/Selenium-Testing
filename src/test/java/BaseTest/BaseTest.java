@@ -16,7 +16,7 @@ public class BaseTest {
 
     @BeforeClass
     public void reportSetup(){
-      extent = new ExtentReports("C:/Users/parth/Desktop/Demo_Blaze_Testing/Test_Outputs/Test_Report_02.html");
+      extent = new ExtentReports("C:/Users/parth/Desktop/Demo_Blaze_Testing/Test_Outputs/Test_Report_DD.html");
 
     }
     @BeforeMethod
